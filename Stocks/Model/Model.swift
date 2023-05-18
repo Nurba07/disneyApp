@@ -7,25 +7,24 @@
 
 import Foundation
 
-struct Disney: Decodable {
+struct Disney: Codable {
     let info: Info?
     let data: [GetData]
 }
 
-struct Info: Decodable {
+struct Info: Codable {
     let count: Int?
     let totalPages: Int?
     let nextPage: String
 }
 
-struct GetData: Decodable {
+struct GetData: Codable {
     let _id: Int
-    let films: [String]?
-    let shortFilms: [String]?
-    let videoGames: [String]?
-    let name: String?
-    let imageUrl: String?
+    let films: [String]
+    let shortFilms: [String]
+    let videoGames: [String]
+    let name: String
+    let imageUrl: String
 
 }
-
 

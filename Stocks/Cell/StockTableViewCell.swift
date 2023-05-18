@@ -9,11 +9,9 @@ import UIKit
 
 class StockTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var fourthLabel: UILabel!
-    @IBOutlet weak var thirdLabel: UILabel!
-    @IBOutlet weak var idlabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var characterImage: UIImageView!
+    
     static let identifier = "StockTableViewCell"
     static let nib = UINib(nibName: String(describing: StockTableViewCell.self), bundle: nil)
     
